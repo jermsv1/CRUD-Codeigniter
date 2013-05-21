@@ -1,0 +1,29 @@
+Steps for installation...for more information regarding Codeigniter (http://ellislab.com/codeigniter/user-guide/)
+
+1. Unzip directory into www/ or htdocs/ 
+2. Run the SQLDatabase.txt file inside PhpMyAdmin. (this will create the database/table)
+3. Update config files:
+	application/config/database.php
+		-your database host (localhost:3306 is the default usually)
+		-username / password
+	application/config/config.php
+		-Update the base_url with your localhost:port number for Apache
+
+
+All database interactions are available in the messages_model located at
+	application/models/messages_model.php
+		-There's an example of a select, update, insert, and delete from the database using active record. 
+
+
+Controllers are available in 
+	/application/controllers/create|edit|home.php
+
+View are available in 
+	/application/views/create|edit|home.php
+
+
+30+ CodeIgniter tutorials
+http://net.tutsplus.com/articles/web-roundups/30-awesome-codeigniter-tutorials-for-all-skill-levels/
+
+Building a simple blog
+http://www.attilaszomor.com/blog/2010/05/04/using-the-codeigniter-php-web-framework-setting-up-a-simple-secured-blog-in-30-minutes/
